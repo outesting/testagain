@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: testagain-project
+  namespace: argocd
+spec:
+  description: Project for testagain
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  destinations:
+  - name: '*'
+    namespace: '*'
+    server: '*'
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  sourceRepos:
+  - '*'

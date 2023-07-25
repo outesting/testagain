@@ -1,0 +1,8 @@
+site_name: testagain
+site_description: sadsad
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
